@@ -18,22 +18,40 @@ body{
     flex-direction: column;
     font-family: sans-serif;
 }
+
 header{
-    height:5rem;
+    height:fit-content;
+    width: auto;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 4rem;
     background: var(--clr_header);
     color: var(--clr_txt_header);
+    display: grid;
+    place-content: center;
 }
+
+img{
+    height: 80px;
+}
+
 nav{
-    height:3rem;
+    height:1.5rem;
     background: var(--clr_menu);
+    font-size: 1rem;
 }
+
 nav a{
     color:var(--clr_menu_link);
     text-decoration:none;
 }
+
 nav a:hover{
     color:var(--clr_menu_link_hover);
 }
+
 main{
     background: var(--clr_back);
     flex-grow: 5;
@@ -41,11 +59,13 @@ main{
     flex-direction: column;
 
 }
+
 footer{
     height: 4rem;
     background: var(--clr_menu);
     color:var(--clr_txt_header);
 }
+
 .centrum{
     display:flex;
     justify-content: center;
